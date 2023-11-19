@@ -7,7 +7,7 @@ const Header = () => {
         <div class="container px-4 mx-auto md:flex md:items-center">
           <div class="flex justify-between items-center">
             <a href="#" class="font-bold text-2xl text-indigo-600">
-              CELLA
+              <img src="logo.png" alt="Cella" />
             </a>
             <button
               class="border border-solid border-gray-600 px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 md:hidden"
@@ -17,63 +17,60 @@ const Header = () => {
             </button>
           </div>
           <div
-            class="hidden md:flex flex-col md:flex-row md:ml-auto mt-3 md:mt-0"
+            class="hidden md:flex w-1/3 flex-col md:flex-row md:ml-auto mt-3 md:mt-0 justify-between"
             id="navbar-collapse"
           >
             <a
               href="#"
-              class="p-2 lg:px-4 md:mx-2 text-white rounded bg-indigo-600"
+              class="flex items-center p-2 lg:px-4 w-24 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300"
             >
               Home
             </a>
             <a
               href="#"
-              class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300"
+              class="flex items-center p-2 lg:px-4 w-24 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300"
+            >
+              Brand
+              <svg
+                class="-mr-1 h-5 w-5 text-gray-400"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                  clip-rule="evenodd"
+                />
+              </svg>
+            </a>
+            <a
+              href="#"
+              class="p-2 lg:px-4 w-24 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300"
             >
               About
             </a>
             <a
               href="#"
-              class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300"
-            >
-              Features
-            </a>
-            <a
-              href="#"
-              class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300"
-            >
-              Pricing
-            </a>
-            <a
-              href="#"
-              class="p-2 lg:px-4 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300"
+              class="p-2 lg:px-4 w-24 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300"
             >
               Contact
             </a>
             {/* <a
               href="#"
-              class="p-2 lg:px-4 md:mx-2 text-indigo-600 text-center border border-transparent rounded hover:bg-indigo-100 hover:text-indigo-700 transition-colors duration-300"
+              class="p-2 lg:px-4 w-24 md:mx-2 text-indigo-600 text-center border border-transparent rounded hover:bg-indigo-100 hover:text-indigo-700 transition-colors duration-300"
             >
               Login
             </a>
             <a
               href="#"
-              class="p-2 lg:px-4 md:mx-2 text-indigo-600 text-center border border-solid border-indigo-600 rounded hover:bg-indigo-600 hover:text-white transition-colors duration-300 mt-1 md:mt-0 md:ml-1"
+              class="p-2 lg:px-4 w-24 md:mx-2 text-indigo-600 text-center border border-solid border-indigo-600 rounded hover:bg-indigo-600 hover:text-white transition-colors duration-300 mt-1 md:mt-0 md:ml-1"
             >
               Signup
             </a> */}
           </div>
         </div>
       </nav>
-
-      <div class="bg-indigo-100 py-6 md:py-12">
-        {/* <h1 class="text-3xl md:text-4xl font-medium mb-2">
-        Cella
-        </h1>
-        <p>We are India’s best lithium-ion mobile battery brand. We got a battery for all your needs.</p>
-        <button class="bg-indigo-600 text-white py-2 px-6 rounded-full text-xl mt-6">
-        </button> */}
-      </div>
     </div>
   );
 };
