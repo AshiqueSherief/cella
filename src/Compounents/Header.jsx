@@ -1,19 +1,23 @@
 import React from "react";
+import logo from "./logo.png";
+import menu from "./menu_logo.svg";
 
 const Header = () => {
   return (
     <div class="header-2">
       <nav class="bg-white py-2 md:py-4">
-        <div class="container px-4 mx-auto md:flex md:items-center">
+        <div class="container px-4 mx-auto md:flex items-center">
           <div class="flex justify-between items-center">
-            <a href="#" class="font-bold text-2xl text-indigo-600">
-              <img src="logo.png" alt="Cella" />
+            <a href="#" class="font-bold text-l text-indigo-600">
+              <img class="h-10" src={logo} alt="Cella" />
             </a>
             <button
               class="border border-solid border-gray-600 px-3 py-1 rounded text-gray-600 opacity-50 hover:opacity-75 md:hidden"
               id="navbar-toggle"
             >
-              <i class="fas fa-bars"></i>
+              <i class="fas fa-bars">
+                <img class="w-4" src={menu} alt="Cella" />
+              </i>
             </button>
           </div>
           <div
@@ -46,13 +50,13 @@ const Header = () => {
             </a>
             <a
               href="#"
-              class="p-2 lg:px-4 w-24 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300"
+              class="p-2 lg:px-4 flex items-center w-24 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300"
             >
               About
             </a>
             <a
               href="#"
-              class="p-2 lg:px-4 w-24 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300"
+              class="p-2 lg:px-4 flex items-center w-24 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300"
             >
               Contact
             </a>
