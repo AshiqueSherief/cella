@@ -1,0 +1,3 @@
+.group:focus .group-focus\:visible {
+  display: block;
+}

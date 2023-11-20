@@ -1,6 +1,7 @@
 import React from "react";
 import logo from "../assets/logo.png";
 import menu from "../assets/menu_logo.svg";
+import "./Header.css";
 
 const Header = () => {
   return (
@@ -30,24 +31,89 @@ const Header = () => {
             >
               Home
             </a>
-            <a
-              href="#"
-              class="flex items-center p-2 lg:px-4 w-24 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300"
-            >
-              Brand
-              <svg
-                class="-mr-1 h-5 w-5 text-gray-400"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                aria-hidden="true"
+            <button class="relative flex flex-col items-center group focus:outline-none">
+              <div class="flex items-center p-2 lg:px-4 w-24 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300">
+                Brand
+                <svg
+                  class="w-4 h-4 mt-px ml-1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div
+                class="absolute top-0 hidden w-screen max-w-lg mt-16 bg-white border border-black shadow-lg group-focus:visible"
+                style={{ backgroundColor: "rgba(255, 255, 255, 0.50)" }}
               >
-                <path
-                  fill-rule="evenodd"
-                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </a>
+                <div class="grid grid-cols-3 gap-8 p-5">
+                  <a class="flex" href="#">
+                    <div class="flex flex-col">
+                      <span class="text-left font-medium leading-none">
+                        IPhone
+                      </span>
+                    </div>
+                  </a>
+                  <a class="flex" href="#">
+                    <div class="flex flex-col">
+                      <span class="text-left font-medium leading-none">MI</span>
+                    </div>
+                  </a>
+                  <a class="flex" href="#">
+                    <div class="flex flex-col">
+                      <span class="text-left font-medium leading-none">
+                        Lava
+                      </span>
+                    </div>
+                  </a>
+                  <a class="flex" href="#">
+                    <div class="flex flex-col">
+                      <span class="text-left font-medium leading-none">
+                        Techno
+                      </span>
+                    </div>
+                  </a>
+                  <a class="flex" href="#">
+                    <div class="flex flex-col">
+                      <span class="text-left font-medium leading-none">LG</span>
+                    </div>
+                  </a>
+                  <a class="flex" href="#">
+                    <div class="flex flex-col">
+                      <span class="text-left font-medium leading-none">
+                        Mobistar
+                      </span>
+                    </div>
+                  </a>
+                  <a class="flex" href="#">
+                    <div class="flex flex-col">
+                      <span class="text-left font-medium leading-none">
+                        Lenovo
+                      </span>
+                    </div>
+                  </a>
+                  <a class="flex" href="#">
+                    <div class="flex flex-col">
+                      <span class="text-left font-medium leading-none">
+                        Motorola
+                      </span>
+                    </div>
+                  </a>
+                  <a class="flex" href="#">
+                    <div class="flex flex-col">
+                      <span class="text-left font-medium leading-none">
+                        Itel
+                      </span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </button>
             <a
               href="#"
               class="p-2 lg:px-4 flex items-center w-24 md:mx-2 text-gray-600 rounded hover:bg-gray-200 hover:text-gray-700 transition-colors duration-300"
