@@ -1,5 +1,5 @@
 import React from "react";
-import wave from "./wave.gif";
+import wave from "../assets/wave.gif";
 
 const Test = () => {
   return (
