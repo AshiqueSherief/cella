@@ -1,11 +1,6 @@
 import React from "react";
 import Box from "@mui/material/Box";
 import "./Poster.css";
-import Card from "@mui/material/Card";
-import CardActions from "@mui/material/CardActions";
-import CardContent from "@mui/material/CardContent";
-import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
 
 const Poster = () => {
   return (
@@ -25,18 +20,7 @@ const Poster = () => {
             </h3>
           </div>
         </div>
-        <div className="md:flex md:w-1/3 md:flex-wrap mt-6 md:mt-12 items-start">
-          <Box
-            sx={{
-              backgroundColor: "red",
-              display: "inline-block",
-              mx: "2px",
-              transform: "scale(0.8)",
-              boxShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
-              border: "1p solid white",
-            }}
-          ></Box>
-        </div>
+        <div className="md:flex md:w-1/3 md:flex-wrap mt-6 md:mt-12 items-start"></div>
       </div>
     </div>
   );

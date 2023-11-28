@@ -1,4 +1,6 @@
 import "./App.css";
+import FeatureList from "./Compounents/FeatureList";
+import Features from "./Compounents/Features";
 import Footer from "./Compounents/Footer";
 import Header from "./Compounents/Header";
 import Poster from "./Compounents/Poster";
@@ -11,6 +13,8 @@ function App() {
       <Header />
       <Poster />
       <Products />
+      <Features />
+      <FeatureList />
       <Footer />
       {/* <Test /> */}
     </div>
